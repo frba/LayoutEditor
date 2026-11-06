@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Layout Editor Server (Port 8000)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "python3 -m http.server 8000",
+      "cwd": "${workspaceFolder}",
+      "serverReadyAction": {
+        "pattern": "Serving HTTP on .* port ([0-9]+)",
+        "uriFormat": "http://localhost:%s",
+        "action": "openExternally"
+      }
+    },
+    {
+      "name": "Launch Chrome (localhost:8000)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Open index.html in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/index.html"
+    }
+  ]
+}
