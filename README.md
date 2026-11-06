@@ -2,9 +2,17 @@
 
 Interactive 2D CAD floor plan editor and real-time 3D architectural cutaway schematic renderer for the **Concordia Genome Foundry** (`15.0m × 24.0m`).
 
+## 💻 Running Locally
+You can open `index.html` directly in any modern browser, or serve it via a local HTTP server:
+
+```bash
+python3 -m http.server 8000
+```
+Then open [http://localhost:8000](http://localhost:8000) in your browser.
+
 ## 🚀 Live GitHub Pages App
 Once GitHub Pages is enabled on your repository, open:
-`https://<your-github-username>.github.io/genome-foundry-layout/`
+`https://frba.github.io/LayoutEditor/` (or `https://<your-github-username>.github.io/<repo-name>/`)
 
 ## ✨ Features Baked into Default State
 - **Ground-Truth Architectural Floor Plan (`15.0m × 24.0m`)**:
